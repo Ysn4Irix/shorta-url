@@ -29,7 +29,7 @@ const vue = new Vue({
         this.errorVisible = false;
         this.createdVisible = true;
         this.loaderVisible = false;
-        this.created = `http://localhost:4000/${result.slug}`;
+        this.created = `https://shorturl.xyz/${result.slug}`;
       } else if (response.status === 429) {
         this.error =
           "You are sending too many requests. Try again in 30 seconds.";
