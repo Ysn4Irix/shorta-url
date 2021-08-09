@@ -55,6 +55,12 @@ p {
   font-weight: bold;
 }
 
+#footer{
+  color: var(--shadowDark);
+  font-weight: bold;
+  font-size: 11pt;
+}
+
 @media only screen and (max-width: 600px) {
   .hero-body {
     transform: scale(0.9);

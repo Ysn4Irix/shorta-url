@@ -1,6 +1,6 @@
 {
   "name": "shorta-url",
-  "description": "Shorta-url an URL Shortner Web Application using nodejs API & vuejs cdn",
+  "description": "Shorta-url an URL Shortner Web Application using nodejs API & Express & vuejs cdn",
   "version": "1.0.0",
   "private": true,
   "author": "Ysn4Irix",
