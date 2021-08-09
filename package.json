@@ -1,0 +1,24 @@
+{
+  "name": "shorta-url",
+  "description": "shorta-url an URL Shortner Web Application using nodejs API & vuejs cdn",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Ysn4Irix",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.3.0",
+    "express-slow-down": "^1.4.0",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.2",
+    "mongoose": "^5.13.5",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.1.23"
+  }
+}
