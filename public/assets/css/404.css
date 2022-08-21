@@ -1,7 +1,14 @@
+@font-face {
+    font-family: "Nerd";
+    src: local("Nerd"),
+        url(../fonts/nerd.ttf) format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nerd';
 }
 
 html,
@@ -18,19 +25,16 @@ body {
     background-color: #0E2938;
 }
 
-.not-found {
-    margin: 1rem 0;
-    color: #ffffff;
-    font-size: 3rem;
-    font-weight: normal;
-}
-
 .info {
     margin: 1rem 0;
     color: #ffffff;
     align-items: center;
     text-align: center;
     font-weight: normal;
+}
+
+.image{
+    margin-bottom: 1rem;
 }
 
 .go-home-link {

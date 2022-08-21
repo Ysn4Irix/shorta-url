@@ -11,9 +11,9 @@ const vue = new Vue({
   },
   methods: {
     async createUrl() {
-      this.error = "";
-      this.errorVisible = false;
-      this.loaderVisible = true;
+      this.error = ""
+      this.errorVisible = false
+      this.loaderVisible = true
       const response = await fetch("/url", {
         method: "POST",
         headers: {
@@ -23,26 +23,26 @@ const vue = new Vue({
           url: this.url,
           slug: this.slug || undefined,
         }),
-      });
+      })
       if (response.ok) {
-        const result = await response.json();
-        this.errorVisible = false;
-        this.createdVisible = true;
-        this.loaderVisible = false;
-        this.created = `https://shorturl.xyz/${result.slug}`;
+        const result = await response.json()
+        this.errorVisible = false
+        this.createdVisible = true
+        this.loaderVisible = false
+        this.created = `https://shortaurl.ysnirix.live/${result.slug}`
       } else if (response.status === 429) {
         this.error =
-          "You are sending too many requests. Try again in 30 seconds.";
-        this.errorVisible = true;
-        this.loaderVisible = false;
-        this.createdVisible = false;
+          "You are sending too many requests. Try again in 30 seconds."
+        this.errorVisible = true
+        this.loaderVisible = false
+        this.createdVisible = false
       } else {
-        const result = await response.json();
-        this.errorVisible = true;
-        this.loaderVisible = false;
-        this.createdVisible = false;
-        this.error = result.message;
+        const result = await response.json()
+        this.errorVisible = true
+        this.loaderVisible = false
+        this.createdVisible = false
+        this.error = result.error.message
       }
     },
   },
-});
+})

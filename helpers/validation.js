@@ -2,10 +2,10 @@
  * @author YsnIrix
  * @email ysn4irix@gmail.com
  * @create date 08-08-2021
- * @modify date 08-08-2021
+ * @modify date 21-08-2022
  */
 
-const Joi = require("joi");
+const Joi = require("joi")
 
 const options = {
   abortEarly: false,
@@ -14,7 +14,7 @@ const options = {
       label: "",
     },
   },
-};
+}
 
 const validateData = (data) => {
   const schema = Joi.object({
@@ -37,8 +37,8 @@ const validateData = (data) => {
           "Slug length must be more than 5 & contains numbers & caracters"
         )
       ),
-  });
-  return schema.validate(data, options);
-};
+  })
+  return schema.validate(data, options)
+}
 
-module.exports = validateData;
+module.exports = validateData

@@ -1,11 +1,17 @@
+@font-face {
+  font-family: "Nerd";
+  src: local("Nerd"),
+    url(../fonts/nerd.ttf) format("truetype");
+}
+
 * {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Nerd';
 }
 
 :root {
   --shadowDark: #D9DDE6;
   --background: #0E2938;
-  --shadowLight: #18FBB7;
+  --shadowLight: #00DC82;
   --messageError: #FF5252;
 }
 
